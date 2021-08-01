@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Gowun+Batang&family=Josefin+Sans:wght@100&display=swap');
+
+$font-1: 'Gowun Batang', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefine Sans', serif;
+
+$color-1: #3494ba;
+$color-2: #247dbd;
+$color-3: rgb(109, 191, 200);
+$color-4: #7dc6ce;
+$color-5: #8e9e9f;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: $black;
+}
+
+button{
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $black;
+}
+
+a:visited {
+    color: $black;
+}
+
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: .4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}
