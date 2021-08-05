@@ -13,9 +13,9 @@ class Languages extends Component {
             {id: 7, value: 'Git', xp: 2},
         ],
         frameworks: [
-            {id: 1, value: 'Symfony', xp: 1.6},
-            {id: 2, value: 'React', xp: 1.5},
-            {id: 3, value: 'Vue js', xp: 1.4},
+            {id: 1, value: 'Symfony', xp: 1.2},
+            {id: 2, value: 'React', xp: 1},
+            {id: 3, value: 'Vue js', xp: 1},
             {id: 4, value: 'Bootstrap', xp: 1.7},
         ]
     }
